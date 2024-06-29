@@ -21,11 +21,11 @@ public:
             }
         }
 
-        while (count < k) {
-
-            sum += num;
-            num++;
-            count++;
+       if (count < k) {
+           long long n=k-count;
+           long long sume= (2*num+(n-1))*n/2;
+            sum = sum + sume; 
+           
         }
         return sum;
     }
