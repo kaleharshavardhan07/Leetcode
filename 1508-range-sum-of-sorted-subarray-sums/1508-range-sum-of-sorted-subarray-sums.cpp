@@ -7,7 +7,7 @@ public:
            int  sum=0;
             for(int j=i; j<n;j++){
                 sum+=nums[j] ;
-                sum=sum%MOD;
+                sum=sum;
                 ret.push_back(sum);
             }
 
