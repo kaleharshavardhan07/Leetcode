@@ -3,6 +3,7 @@ public:
     int triangularSum(vector<int>& nums) {
         vector<int> ret = nums;
         int k = ret.size();
+        if(k==1)return ret[0];
         while (k > 1) {
             // vector<int>r(ret.size()-1);
             for (int i = 0; i < ret.size() - 1; ++i) {
