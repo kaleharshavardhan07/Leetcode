@@ -4,7 +4,7 @@ public:
         int min = INT_MAX;
         int h = 0;
         int w = 0;
-        for (int i = 1; i <= area; i++) {
+        for (int i = 1; i <= area/2+1; i++) {
             if (area % i == 0 && area / i >= i) {
                 if (min > area / i - i) {
                     min = area / i - i;
