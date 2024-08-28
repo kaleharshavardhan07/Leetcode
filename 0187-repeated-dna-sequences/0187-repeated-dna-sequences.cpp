@@ -1,73 +1,36 @@
+// 
+
+
 class Solution {
 public:
     vector<string> findRepeatedDnaSequences(string s) {
-        vector<int> adj[4];
-        set<string>ret;
-       vector<string>reti;
-        if(s.length()<10)return reti; 
-        for (int i = 0; i < s.length() - 9; i++) {
-            char c = s[i];
-            if (c == 'A')
-                adj[0].push_back(i);
-            else if (c == 'C')
-                adj[1].push_back(i);
-            else if (c == 'G')
-                adj[2].push_back(i);
-            else if (c == 'T')
-                adj[3].push_back(i);
-        }
+        // Initialize sets to track seen sequences and repeated sequences
+        set<string> seen;
+        set<string> repeated;
         
-        for (int i = 0; i < s.length() - 9; i++) {
-            char c = s[i];
-            string cur = s.substr(i, 10);
-            int count = 0;
-            if (c == 'A') {
-                for (int n : adj[0]) {
-                    string sub = s.substr(n, 10);
-                    if (sub == cur) {
-                        count++;
-                    }
-                }
-                if (count > 1) {
-                    ret.insert(cur);
-                }
-            }
-            if (c == 'C') {
-                for (int n : adj[1]) {
-                    string sub = s.substr(n, 10);
-                    if (sub == cur) {
-                        count++;
-                    }
-                }
-                if (count > 1) {
-                    ret.insert(cur);
-                }
-            }
-            if (c == 'G') {
-                for (int n : adj[2]) {
-                    string sub = s.substr(n, 10);
-                    if (sub == cur) {
-                        count++;
-                    }
-                }
-                if (count > 1) {
-                    ret.insert(cur);
-                }
-            }
+        // Resultant vector to return repeated sequences
+        vector<string> result;
 
-            if (c == 'T') {
-                for (int n : adj[3]) {
-                    string sub = s.substr(n, 10);
-                    if (sub == cur) {
-                        count++;
-                    }
-                }
-                if (count > 1) {
-                    ret.insert(cur);
-                }
+        // Edge case: If the input string is less than 10 characters, no 10-letter sequences can be formed
+        if (s.length() < 10) return result;
+
+        // Slide a window of size 10 over the string
+        for (int i = 0; i <= s.length() - 10; i++) {
+            // Extract the current 10-letter sequence
+            string cur = s.substr(i, 10);
+
+            // If the sequence has been seen before, add it to the repeated set
+            if (seen.find(cur) != seen.end()) {
+                repeated.insert(cur);
+            } else {
+                // Otherwise, add it to the seen set
+                seen.insert(cur);
             }
         }
-        vector<string> myVector(ret.begin(), ret.end());
-        return myVector;
+
+        // Convert the set of repeated sequences to a vector
+        result.assign(repeated.begin(), repeated.end());
+
+        return result;
     }
 };
