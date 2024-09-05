@@ -9,7 +9,7 @@ public:
         }
         int tot = mean * (m + n);
         int sumn = tot - summ;
-        if (  sumn<n || sumn / n > 6) {
+        if (  sumn < n || sumn  > 6*n) {
             return {};
         }
         
@@ -21,17 +21,7 @@ public:
             ret[i] += a; sumn -= a;
         }
 
-        // while (sumn > 0 && maxi>0) {
-        //     if (sumn - maxi > 0) {
-        //         sumn -= maxi;
-        //         reti.push_back(maxi);
-        //     }  if (sumn - maxi == 0) {
-        //         reti.push_back(maxi);
-        //         break;
-        //     } else {
-        //         maxi--;
-        //     }
-        // }
+      
         return ret;
     }
 };
