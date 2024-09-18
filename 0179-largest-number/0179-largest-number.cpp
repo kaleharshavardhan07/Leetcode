@@ -20,15 +20,16 @@ public:
                 s += adj[i][j];
             }
         }
-        
-        for(int i=0;i<s.length();i++){
-            if(s[i]=='0'){
-                s.erase(i,1);
+        size_t firstNonZero = s.find_first_not_of('0');
+    
+  
+    if (firstNonZero == std::string::npos) {
+        return "0";
+    }
 
-            }
-            else{break;}
-        }
-        if(s.empty())return "0";
+    s.erase(0, firstNonZero);
+    
+      
         return s;
     }
 };
