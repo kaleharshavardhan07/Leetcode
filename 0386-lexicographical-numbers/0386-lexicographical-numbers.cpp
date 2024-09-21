@@ -8,7 +8,7 @@ public:
         }
         vector<int> reti;
 
-        sort(ret.begin(), ret.end());
+        sort(ret.begin(),ret.end());
         for (string k : ret) {
             reti.push_back(stoi(k));
         }
