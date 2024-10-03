@@ -9,10 +9,10 @@ public:
         string n;
         for (int i = 0; i < secret.length(); i++) {
             if (secret[i] == guess[i]) {
-                if (mapi[secret[i]] > 0) {
+               
                     A++;
                     mapi[secret[i]]--;
-                }
+                
 
             } else {
                 n += guess[i];
