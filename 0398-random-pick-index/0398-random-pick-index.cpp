@@ -15,7 +15,7 @@ public:
             }
         }
         if( ret.empty())return -1;
-        std::srand(std::time(0));
+        
         int randomIndex = std::rand() % ret.size();
         return ret[randomIndex];
         
