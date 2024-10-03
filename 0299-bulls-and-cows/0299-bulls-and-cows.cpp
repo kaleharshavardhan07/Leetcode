@@ -9,11 +9,11 @@ public:
         string n;
         for (int i = 0; i < secret.length(); i++) {
             if (secret[i] == guess[i]) {
-                A++;
-                mapi[secret[i]]--;
-                if (mapi[secret[i]] == 0) {
-                    mapi.erase(secret[i]);
+                if (mapi[secret[i]] > 0) {
+                    A++;
+                    mapi[secret[i]]--;
                 }
+
             } else {
                 n += guess[i];
             }
@@ -21,10 +21,9 @@ public:
         int B = 0;
         for (char c : n) {
             if (mapi.find(c) != mapi.end()) {
-                B++;
-                mapi[c]--;
-                if (mapi[c] == 0) {
-                    mapi.erase(c);
+                if (mapi[c] > 0) {
+                    B++;
+                    mapi[c]--;
                 }
             }
         }
