@@ -7,12 +7,11 @@ public:
         }
         int A = 0;
         string n;
-        for (int i = 0; i < secret.length(); i++) {
+        for (int i = 0; i < secret.length(); ++i) {
             if (secret[i] == guess[i]) {
-               
-                    A++;
-                    mapi[secret[i]]--;
-                
+
+                A++;
+                mapi[secret[i]]--;
 
             } else {
                 n += guess[i];
