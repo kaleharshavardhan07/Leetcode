@@ -1,21 +1,28 @@
 class Solution {
 public:
     int minSwaps(string s) {
-        int open = 0, close = 0, swaps = 0;
-        for (char ch : s) {
-            if (ch == '[') {
-                open++;
-            } else {
-                close++;
+        int op=0;
+        int cl=0;
+        int c=0;
+        // int swap=0;
+        for( int i=0;i<s.length();i++){
+            if( s[i]=='['){
+                op++;
+            }
+            else {
+                cl++;
             }
 
-          
-            if (close > open) {
-                swaps++;
-                open++;  
-                close--; 
+            if( cl>op){
+                // swap(s[i],s[s.length()-1-i]);
+                c++;
+                op++;
+                cl--;
+
+                
             }
+
         }
-        return swaps;
+        return c;
     }
 };
