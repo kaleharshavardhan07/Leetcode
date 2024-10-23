@@ -8,8 +8,8 @@ public:
         std::vector<int> visited(k, 0);
         std::stack<int> st;
         
-        visited[0] = 1;  // Mark the starting room (room 0) as visited
-        st.push(0);  // Start DFS from room 0
+        visited[0] = 1;  
+        st.push(0); 
         
         while (!st.empty()) {
             int room = st.top();
@@ -23,13 +23,13 @@ public:
             }
         }
 
-        // Check if all rooms have been visited
+        
         for (int visit : visited) {
             if (visit == 0) {
-                return false;  // Found an unvisited room
+                return false; 
             }
         }
 
-        return true;  // All rooms have been visited
+        return true;  
     }
 };
