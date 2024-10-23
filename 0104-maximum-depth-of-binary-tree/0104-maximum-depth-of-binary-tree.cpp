@@ -13,12 +13,11 @@
 class Solution {
 public:
     int trav(TreeNode* root) {
-       if (root == nullptr) {
-            return 0;
+        if (root) {
+
+            return max(1 + trav(root->left), 1 + trav(root->right));
         }
-        int leftDepth = trav(root->left);
-        int rightDepth = trav(root->right);
-        return 1 + max(leftDepth, rightDepth);
+        return 0;
     }
     int maxDepth(TreeNode* root) {
         int count = trav(root);
