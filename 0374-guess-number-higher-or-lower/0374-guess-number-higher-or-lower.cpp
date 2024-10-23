@@ -22,6 +22,6 @@ public:
                 left = mid + 1;
             }
         }
-        return -1; // This should never be reached if the input is valid.
+        return -1;
     }
 };
