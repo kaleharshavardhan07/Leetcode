@@ -30,26 +30,27 @@
 class Solution {
 public:
     int uniquePaths(int m, int n) {
-        // Create a 2D DP table
-        vector<vector<int>> dp(m, vector<int>(n, 0));
-        
-        // Initialize base case: Only 1 way to reach the starting point
-        dp[0][0] = 1;
-        
-        // Fill the DP table
-        for (int i = 0; i < m; ++i) {
-            for (int j = 0; j < n; ++j) {
-                // Add ways from the top (if exists) and left (if exists)
-                if (i > 0) {
-                    dp[i][j] += dp[i - 1][j];
-                }
-                if (j > 0) {
-                    dp[i][j] += dp[i][j - 1];
-                }
-            }
-        }
-        
-        // The answer is stored in dp[m-1][n-1]
-        return dp[m - 1][n - 1];
+        vector<vector<int>>dp(m,vector<int>(n,-1));
+
+   dp[0][0]=1;
+  for(int i=1;i<m;i++){
+	  dp[i][0]=1;
+  }
+   for(int i=1;i<n;i++){
+	  dp[0][i]=1;
+  }
+
+
+   for(int i=1;i<m;i++){
+	   for(int j=1;j<n;j++){
+             int up=dp[i-1][j];
+			 int left=dp[i][j-1];
+			 dp[i][j]=left+up;
+
+
+	   }
+   }
+
+   return dp[m-1][n-1];
     }
 };
