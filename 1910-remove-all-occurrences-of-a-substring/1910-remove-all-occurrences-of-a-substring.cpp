@@ -18,11 +18,9 @@ public:
         //         i++;
         //     }
         // } 
-         size_t pos = s.find(part);  
-    while (pos != std::string::npos) {
-        s.erase(pos, part.length());  
-        pos = s.find(part); 
-    }
+   while(s.length()>0 && s.length()>s.find(part)){
+           s.erase(s.find(part),part.length());
+        }
     return s;
         
     }
