@@ -1,0 +1,41 @@
+class Solution {
+public:
+static bool cmp(vector<int>& a, vector<int>& b) {
+    if (a[0] == b[0]) {
+        return a[1] < b[1];  
+    }
+    return a[0] < b[0];  
+}
+
+    int countDays(int days, vector<vector<int>>& meetings) {
+
+        sort( meetings.begin(),meetings.end(),cmp);
+        vector<vector<int>>ret;
+        int s=meetings[0][0];
+        int e=meetings[0][1];
+        for( auto it : meetings){
+            if( e>=it[1])continue;
+            if( e>=it[0]){
+                e=it[1];
+            }
+            else{
+                ret.push_back({s,e});
+                s=it[0];
+                e=it[1];
+            }
+        
+
+        }
+          ret.push_back({s,e});
+
+
+        int sum=ret[0][0]-1;
+        for( int i=0;i<ret.size()-1;i++){
+            sum=sum+ (ret[i+1][0]-ret[i][1]-1);
+        }
+        sum=sum+days-ret[ret.size()-1][1];
+
+        return sum;
+        
+    }
+};
