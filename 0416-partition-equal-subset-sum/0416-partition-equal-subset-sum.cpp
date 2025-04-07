@@ -1,28 +1,23 @@
 class Solution {
 public:
     bool canPartition(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
-        int l = 0;
-        int r = nums.size() - 1;
-        int suml = nums[0];
-        int sumr = nums[r];
-        while (l < r) {
-
-            if (sumr > suml) {
-
-                l++;
-                suml += nums[l];
-            } else if (sumr < suml) {
-                r--;
-                sumr += nums[r];
-            } else if (sumr == suml) {
-                if (r-l==1)
-                    return true;
-                else{
-                    l++;r--;
-                }
+        int totalSum = accumulate(nums.begin(), nums.end(), 0);
+        
+        
+        if (totalSum % 2 != 0) {
+            return false;
+        }
+        
+        int target = totalSum / 2;
+        vector<bool> dp(target + 1, false);
+        dp[0] = true;
+        
+        for (int num : nums) {
+            for (int j = target; j >= num; --j) {
+                dp[j] = dp[j] || dp[j - num];
             }
         }
-        return false;
+        
+        return dp[target];
     }
 };
