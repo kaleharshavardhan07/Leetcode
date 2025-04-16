@@ -5,9 +5,9 @@ public:
 
         int l = 0;
         int r = 0;
-        int c = 0;
+        long long c = 0;
         long long s = 0;
-        map<int, int> mp;
+       unoredered_map<int, int> mp;
         int n = nums.size();
         while (l < n) {
             while (r < n && c < k) {
