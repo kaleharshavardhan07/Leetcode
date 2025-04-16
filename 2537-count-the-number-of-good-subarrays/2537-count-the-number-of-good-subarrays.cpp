@@ -7,7 +7,7 @@ public:
         int r = 0;
         long long c = 0;
         long long s = 0;
-       unoredered_map<int, int> mp;
+       unordered_map<int, int> mp;
         int n = nums.size();
         while (l < n) {
             while (r < n && c < k) {
