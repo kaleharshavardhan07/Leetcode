@@ -1,38 +1,32 @@
 class Solution {
 public:
-    void solve(set<string>& mp, string s, char last, int i, int n) {
-
-        if (i == n) {
-            mp.insert(s);
-
+    void solve(int curr, int& n, char prev, string reti, vector<string>& ret) {
+        if (curr == n) {
+            ret.push_back(reti);
             return;
-        } else {
-            if (last == 'a') {
-                solve(mp, s + 'b','b', i+1, n);
-                solve(mp, s + 'c','c', i+1, n);
-            }
-            if (last == 'b') {
-                solve(mp, s + 'a','a', i+1, n);
-                solve(mp, s + 'c','c', i+1, n);
-            }
-            if (last == 'c') {
-                solve(mp, s + 'b','b', i+1, n);
-                solve(mp, s + 'a','a', i+1, n);
-            }
+        }
+        if (prev == 'a') {
+
+            solve(curr + 1, n, 'b', reti + 'b', ret);
+            solve(curr + 1, n, 'c', reti + 'c', ret);
+        }
+        if (prev == 'b') {
+
+            solve(curr + 1, n, 'a', reti + 'a', ret);
+            solve(curr + 1, n, 'c', reti + 'c', ret);
+        }
+        if (prev == 'c') {
+
+            solve(curr + 1, n, 'b', reti + 'b', ret);
+            solve(curr + 1, n, 'a', reti + 'a', ret);
         }
     }
     string getHappyString(int n, int k) {
-
-        set<string> mp;
-        string s;
+        int curr = 0;
         vector<string> ret;
-        solve(mp, "a",'a', 1, n);
-        solve(mp, "b",'b', 1, n);
-        solve(mp, "c",'c', 1, n);
-        for (auto it : mp) {
-            ret.push_back(it);
-        }
-
+        solve(curr + 1, n, 'b', "b", ret);
+        solve(curr + 1, n, 'a', "a", ret);
+        solve(curr + 1, n, 'c', "c", ret);
         sort(ret.begin(), ret.end());
         if (k > ret.size())
             return "";
