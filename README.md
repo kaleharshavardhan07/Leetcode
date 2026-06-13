@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
+| [3838-weighted-word-mapping](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3838-weighted-word-mapping/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -16,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
+| [3838-weighted-word-mapping](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3838-weighted-word-mapping/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -37,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
+| [3838-weighted-word-mapping](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3838-weighted-word-mapping/) | Easy |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
