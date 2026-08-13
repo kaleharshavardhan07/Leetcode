@@ -1,36 +1,28 @@
 class Solution {
 public:
     int countSubmatrices(vector<vector<int>>& grid, int k) {
-        int m= grid.size();
-        int n = grid[0].size();
-        vector<vector<int>>dp(m, vector<int>(n,0));
-        
-        int c=0;
-        dp[0][0]=grid[0][0];
-        if( dp[0][0]<=k)c++;
-        else{return 0;}
+        int rows = grid.size();
+        int cols = grid[0].size();
+        int count = 0;
 
-        for( int i=1;i<m;i++){
-            dp[i][0]=dp[i-1][0]+grid[i][0];
-            if(dp[i][0]<=k){
-                c++;
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                // Add the top element if it exists
+                if (i > 0) grid[i][j] += grid[i - 1][j];
+                
+                // Add the left element if it exists
+                if (j > 0) grid[i][j] += grid[i][j - 1];
+                
+                // Subtract the top-left diagonal element if both exist to avoid double counting
+                if (i > 0 && j > 0) grid[i][j] -= grid[i - 1][j - 1];
 
+                // Every submatrix must include grid[0][0], so grid[i][j] 
+                // now represents the total sum of the submatrix from (0,0) to (i,j)
+                if (grid[i][j] <= k) {
+                    count++;
+                }
             }
         }
-        for( int j=1;j<n;j++){
-            dp[0][j]=dp[0][j-1]+grid[0][j];
-            if(dp[0][j]<=k)c++;
-        }
-        for( int i=1;i<m;i++ ){
-            for( int j=1;j<n;j++){
-                dp[i][j] = grid[i][j] 
-                         + dp[i-1][j] 
-                         + dp[i][j-1] 
-                         - dp[i-1][j-1];
-                 if( dp[i][j]<=k)c++;
-            }
-           
-        }
-        return c;
+        return count;
     }
 };
