@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
+| [3090-maximum-length-substring-with-two-occurrences](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3090-maximum-length-substring-with-two-occurrences/) | Easy |
 | [3838-weighted-word-mapping](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3838-weighted-word-mapping/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
@@ -86,4 +87,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3090-maximum-length-substring-with-two-occurrences](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3090-maximum-length-substring-with-two-occurrences/) | Easy |
+## Sliding Window
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3090-maximum-length-substring-with-two-occurrences](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3090-maximum-length-substring-with-two-occurrences/) | Easy |
 <!---LeetCode Topics End-->
