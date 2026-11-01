@@ -27,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/kaleharshavardhan07/Leetcode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [1406-stone-game-iii](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1406-stone-game-iii/) | Hard |
 | [1622-fancy-sequence](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1622-fancy-sequence/) | Hard |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
@@ -42,6 +43,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/kaleharshavardhan07/Leetcode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [1406-stone-game-iii](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1406-stone-game-iii/) | Hard |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1732-find-the-highest-altitude/) | Easy |
