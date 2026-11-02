@@ -51,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1732-find-the-highest-altitude](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1732-find-the-highest-altitude/) | Easy |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
+| [3689-maximum-total-subarray-value-i](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
 | [3838-weighted-word-mapping](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3838-weighted-word-mapping/) | Easy |
 ## Matrix
 | Problem Name | Difficulty |
@@ -75,6 +76,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
+| [3689-maximum-total-subarray-value-i](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
