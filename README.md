@@ -49,6 +49,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/kaleharshavardhan07/Leetcode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/kaleharshavardhan07/Leetcode/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
+| [1267-count-servers-that-communicate](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1406-stone-game-iii](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1406-stone-game-iii/) | Hard |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1732-find-the-highest-altitude/) | Easy |
@@ -60,6 +61,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1267-count-servers-that-communicate](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1267-count-servers-that-communicate/) | Medium |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
 ## Prefix Sum
@@ -106,4 +108,20 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3090-maximum-length-substring-with-two-occurrences/) | Easy |
+## Depth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1267-count-servers-that-communicate](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1267-count-servers-that-communicate/) | Medium |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1267-count-servers-that-communicate](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1267-count-servers-that-communicate/) | Medium |
+## Union-Find
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1267-count-servers-that-communicate](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1267-count-servers-that-communicate/) | Medium |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1267-count-servers-that-communicate](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1267-count-servers-that-communicate/) | Medium |
 <!---LeetCode Topics End-->
