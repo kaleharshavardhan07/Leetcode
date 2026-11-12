@@ -55,6 +55,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1732-find-the-highest-altitude](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1732-find-the-highest-altitude/) | Easy |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/kaleharshavardhan07/Leetcode/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3070-count-submatrices-with-top-left-element-and-sum-less-than-k/) | Medium |
+| [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3105-longest-strictly-increasing-or-strictly-decreasing-subarray/) | Easy |
 | [3689-maximum-total-subarray-value-i](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3689-maximum-total-subarray-value-i/) | Medium |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3736-minimum-moves-to-equal-array-elements-iii/) | Easy |
 | [3838-weighted-word-mapping](https://github.com/kaleharshavardhan07/Leetcode/tree/main/3838-weighted-word-mapping/) | Easy |
